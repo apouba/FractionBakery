@@ -14,13 +14,10 @@ public class InstructionsL1 : MonoBehaviour
     {
         Button btn = button.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
-        
-        
     }
 
     void TaskOnClick()
     {
-        
         Debug.Log("clicked");
         instructions.SetActive(false);
         playButton.SetActive(false);
