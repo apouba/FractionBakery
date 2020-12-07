@@ -47,7 +47,7 @@ public class Ingredient : MonoBehaviour
         }
         else
         {
-            status.text = "Not quite! Try again, you go it!";
+            status.text = "Not quite! Try again, you go it! :) ";
         }
     }
 
