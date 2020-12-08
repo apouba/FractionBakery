@@ -26,7 +26,8 @@ public class Halves : MonoBehaviour
         Debug.Log(cakeFraction.value);
         val = cakeFraction.value;
 
-        if(val > .2 && val < .45)
+        // for halves
+        if(val > .3 && val < .6)
         {
             correct.SetActive(true);
         } else
