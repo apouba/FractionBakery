@@ -12,7 +12,11 @@ public class Halves : MonoBehaviour
 
     public float val;
 
-    public GameObject correct;
+    public GameObject correct1;
+    public GameObject correct2;
+    public GameObject correct3;
+    public GameObject correct4;
+    public GameObject correct5;
     public GameObject tryAgain;
     public GameObject group1;
     public GameObject group2;
@@ -20,6 +24,7 @@ public class Halves : MonoBehaviour
     public GameObject group4;
     public GameObject group5;
     public GameObject endscreen;
+    public GameObject nextButtonView;
 
 
     // Start is called before the first frame update
@@ -54,17 +59,23 @@ public class Halves : MonoBehaviour
         {
             group1.SetActive(false);
             group2.SetActive(true);
-            correct.SetActive(false);
+            correct1.SetActive(false);
         } else if(group2.activeSelf)
         {
+            Debug.Log("group2");
             group2.SetActive(false);
             group3.SetActive(true);
-            correct.SetActive(false);
+            correct2.SetActive(false);
         } else if(group3.activeSelf)
         {
             group3.SetActive(false);
             group4.SetActive(true);
+            correct3.SetActive(false);
+        } else if(group4.activeSelf)
+        {
+            group4.SetActive(false);
             group5.SetActive(true);
+            correct4.SetActive(false);
         } else
         {
             endscreen.SetActive(true);
@@ -84,19 +95,69 @@ public class Halves : MonoBehaviour
         Debug.Log(cakeFraction.value);
         val = cakeFraction.value;
 
-        // for halves
-        if(val > .3 && val < .6)
+        
+        if(group1.activeSelf) // for halves
         {
-            correct.SetActive(true);
-        } else
+            if (val > .4 && val < .6)
+            {
+                correct1.SetActive(true);
+                nextButtonView.SetActive(true);
+            }
+            else
+            {
+                tryAgain.SetActive(true);
+            }
+        } else if(group2.activeSelf) // for 1
         {
-            tryAgain.SetActive(true);
+            if (val > .9)
+            {
+                correct2.SetActive(true);
+                nextButtonView.SetActive(true);
+            }
+            else
+            {
+                tryAgain.SetActive(true);
+            }
+        } else if (group3.activeSelf) // for 1/3
+        {
+            if (val > .2 && val < .4)
+            {
+                correct3.SetActive(true);
+                nextButtonView.SetActive(true);
+            }
+            else
+            {
+                tryAgain.SetActive(true);
+            }
+        } else if (group4.activeSelf) // for 1/4
+        {
+            if (val > .15 && val < .35)
+            {
+                correct4.SetActive(true);
+                nextButtonView.SetActive(true);
+            }
+            else
+            {
+                tryAgain.SetActive(true);
+            }
+        } else if (group5.activeSelf) // for 1/2
+        {
+            if (val > .3 && val < .6)
+            {
+                correct5.SetActive(true);
+                nextButtonView.SetActive(true);
+            }
+            else
+            {
+                tryAgain.SetActive(true);
+            }
         }
+
     }
 
     public void ValueChangeCheck()
     {
-        correct.SetActive(false);
+        //correct.SetActive(false);
         tryAgain.SetActive(false);
     }
 
