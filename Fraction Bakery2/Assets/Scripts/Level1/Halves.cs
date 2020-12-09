@@ -60,22 +60,26 @@ public class Halves : MonoBehaviour
             group1.SetActive(false);
             group2.SetActive(true);
             correct1.SetActive(false);
+            nextButtonView.SetActive(false);
         } else if(group2.activeSelf)
         {
             Debug.Log("group2");
             group2.SetActive(false);
             group3.SetActive(true);
             correct2.SetActive(false);
+            nextButtonView.SetActive(false);
         } else if(group3.activeSelf)
         {
             group3.SetActive(false);
             group4.SetActive(true);
             correct3.SetActive(false);
+            nextButtonView.SetActive(false);
         } else if(group4.activeSelf)
         {
             group4.SetActive(false);
             group5.SetActive(true);
             correct4.SetActive(false);
+            nextButtonView.SetActive(false);
         } else
         {
             endscreen.SetActive(true);
