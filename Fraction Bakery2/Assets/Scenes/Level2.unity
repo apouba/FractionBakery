@@ -367,11 +367,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e313c36b5b645beb2af59051d842e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  button: {fileID: 470237884}
   flour: {fileID: 1446249868}
   sugar: {fileID: 1505915303}
   milk: {fileID: 1957276753}
   status: {fileID: 1038171181}
+  flourRecipe: 0.5
+  sugarRecipe: 0.25
+  milkRecipe: 0.75
 --- !u!1 &530567004
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,7 +956,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 812798387
-  m_SortingLayer: 5
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3324677c3477c4075a61e3fd3d3d9b0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
@@ -1144,7 +1147,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 812798387
-  m_SortingLayer: 5
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3324677c3477c4075a61e3fd3d3d9b0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
@@ -1536,7 +1539,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 812798387
-  m_SortingLayer: 5
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3324677c3477c4075a61e3fd3d3d9b0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
@@ -1909,7 +1912,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 812798387
-  m_SortingLayer: 5
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6d0e46b70155c4d15a9d95c59457b36e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2026,7 +2029,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1132573341
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 97744985b667d4b38bcdd102eafbb6ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

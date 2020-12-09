@@ -12,6 +12,9 @@ public class Ingredient : MonoBehaviour
     public Slider sugar;
     public Slider milk;
     public Text status;
+    public float flourRecipe;
+    public float sugarRecipe;
+    public float milkRecipe;
 
     // Start is called before the first frame update
     void Start()
@@ -22,21 +25,22 @@ public class Ingredient : MonoBehaviour
 
     private void AnswerSubmit()
     {
-        if(flour.value > 0.60 || flour.value < 0.40)
+        string incorrectText = "";
+        if(flour.value > (flourRecipe+0.1) || flour.value < (flourRecipe-0.1))
         {
-            Debug.Log("flour is not correct");
+            incorrectText += "flour is not correct\n";
             Debug.Log(flour.value);
             correct = false;
         }
-        if(sugar.value > 0.35 || sugar.value < 0.15)
+        if(sugar.value > (sugarRecipe + 0.1) || sugar.value < (sugarRecipe - 0.1))
         {
-            Debug.Log("sugar is not correct");
+            incorrectText += "sugar is not correct\n";
             Debug.Log(sugar.value);
             correct = false;
         }
-        if(milk.value > 0.85 || milk.value < 0.65)
+        if(milk.value > (milkRecipe + 0.1) || milk.value < (milkRecipe - 0.1))
         {
-            Debug.Log("milk is not correct");
+            incorrectText += "milk is not correct\n";
             Debug.Log(milk.value);
             correct = false;
         }
@@ -47,7 +51,7 @@ public class Ingredient : MonoBehaviour
         }
         else
         {
-            status.text = "Not quite! Try again, you go it! :) ";
+            status.text = incorrectText;
         }
     }
 
