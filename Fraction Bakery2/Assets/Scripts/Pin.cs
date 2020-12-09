@@ -22,7 +22,7 @@ public class Pin : MonoBehaviour
     [Header("Options")] //
     public bool IsAutomatic;
     public bool HideIcon;
-    public string SceneToLoad = "Level 1";
+    //public string SceneToLoad = "Level 1";
 
     [Header("Pins")] //
     public Pin UpPin;

@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 325945303}
   - component: {fileID: 325945305}
   - component: {fileID: 325945304}
+  - component: {fileID: 325945306}
   m_Layer: 0
   m_Name: 1 - elementary hard
   m_TagString: Untagged
@@ -245,7 +246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325945302}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.93, y: -10.03, z: 0}
+  m_LocalPosition: {x: 8.93, y: -10.23, z: 0}
   m_LocalScale: {x: 0.5, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1421657508}
@@ -263,11 +264,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2094960ad4bae243971a8d19beee501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
-  levelName: 
+  index: 3
+  levelName: Level3
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 751021107}
   DownPin: {fileID: 2093265623}
 --- !u!212 &325945305
@@ -320,6 +321,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &325945306
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325945302}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20346212, y: 0.20350754}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.38, y: 1.5}
+    newSize: {x: 2.2, y: 2.29}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.49601, y: 3.1789386}
+  m_EdgeRadius: 0
 --- !u!1 &478075607
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,9 +393,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   levelName: 
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 856542528}
   DownPin: {fileID: 833803236}
 --- !u!212 &478075610
@@ -559,9 +586,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   levelName: 
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 833803236}
   DownPin: {fileID: 325945304}
 --- !u!212 &751021108
@@ -674,9 +701,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   levelName: 
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 478075609}
   DownPin: {fileID: 751021107}
 --- !u!212 &833803237
@@ -775,9 +802,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   levelName: 
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 1509265269}
   DownPin: {fileID: 478075609}
 --- !u!212 &856542529
@@ -861,11 +888,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2094960ad4bae243971a8d19beee501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
+  index: 1
   levelName: Level1
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 2093265623}
   DownPin: {fileID: 0}
 --- !u!212 &869226399
@@ -1115,9 +1142,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   levelName: 
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 0}
   DownPin: {fileID: 1533087154}
 --- !u!212 &1203905238
@@ -1286,9 +1313,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   levelName: 
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 1533087154}
   DownPin: {fileID: 856542528}
 --- !u!212 &1509265270
@@ -1387,9 +1414,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   levelName: 
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 1203905237}
   DownPin: {fileID: 1509265269}
 --- !u!212 &1533087155
@@ -1534,6 +1561,7 @@ GameObject:
   - component: {fileID: 2093265625}
   - component: {fileID: 2093265624}
   - component: {fileID: 2093265623}
+  - component: {fileID: 2093265626}
   m_Layer: 0
   m_Name: 1 - elementary medium
   m_TagString: Untagged
@@ -1553,11 +1581,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2094960ad4bae243971a8d19beee501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
-  levelName: 
+  index: 2
+  levelName: Level2
+  _playLevel: 0
   IsAutomatic: 0
   HideIcon: 0
-  SceneToLoad: 
   UpPin: {fileID: 325945304}
   DownPin: {fileID: 869226398}
 --- !u!212 &2093265624
@@ -1624,6 +1652,32 @@ Transform:
   m_Father: {fileID: 1421657508}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2093265626
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093265622}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.38, y: 1.5}
+    newSize: {x: 2.2, y: 2.29}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.38, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &2143279563
 GameObject:
   m_ObjectHideFlags: 0
