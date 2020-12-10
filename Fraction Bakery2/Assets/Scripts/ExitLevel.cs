@@ -8,7 +8,7 @@ public class ExitLevel : MonoBehaviour
 {
     public string levelName;
     private GameObject player;
-    private GameObject pin;
+    private Pin pin;
     
     private Vector2 player_location;
     public Vector2 pin_location;
@@ -23,10 +23,10 @@ public class ExitLevel : MonoBehaviour
         //player_location = new Vector2(0, 0);
         //pin_location = new Vector2(0, 0);
 
-        //player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("Player");
         //player_location = player.transform.position;
-        //pin = GameObject.FindWithTag("pin1");
-        //player = GameObject.FindGameObjectWithTag("Player");
+        pin = 
+        
 
         Button exit_btn = exit.GetComponent<Button>();
         exit_btn.onClick.AddListener(BackToMap);
@@ -36,6 +36,9 @@ public class ExitLevel : MonoBehaviour
     {
 
         //player.transform.position = pin.transform.position; 
+        Player ps = player.GetComponent<Player>();
+        ps.SetCurrentPin(pin); 
+        //player.get(CurrentPin) = pin;
         SceneManager.LoadScene("Levels Map");
         
     }
