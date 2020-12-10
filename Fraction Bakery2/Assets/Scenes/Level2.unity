@@ -150,7 +150,7 @@ RectTransform:
   m_GameObject: {fileID: 30827115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3166, y: 1.3166, z: 1.3166}
   m_Children:
   - {fileID: 116240200}
   m_Father: {fileID: 576570292}
@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 392.03, y: 220}
+  m_AnchoredPosition: {x: 548, y: -4}
   m_SizeDelta: {x: 89.948975, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30827117
@@ -254,6 +254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Level2
+  pin: {fileID: 0}
+  p1: {fileID: 0}
   exit: {fileID: 30827117}
 --- !u!1 &112499153
 GameObject:
@@ -342,6 +344,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: 
+  pin: {fileID: 0}
+  p1: {fileID: 0}
   exit: {fileID: 30827117}
 --- !u!114 &116240202
 MonoBehaviour:

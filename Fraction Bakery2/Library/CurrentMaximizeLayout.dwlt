@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 578, y: 450}
-  m_MaxSize: {x: 14001, y: 14021}
+  m_MinSize: {x: 578, y: 471}
+  m_MaxSize: {x: 14000, y: 14021}
   vertical: 0
-  controlID: 31792
+  controlID: 34238
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 1260
     height: 731
-  m_MinSize: {x: 302, y: 450}
+  m_MinSize: {x: 303, y: 471}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 31793
+  controlID: 34239
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     y: 0
     width: 1260
     height: 460
-  m_MinSize: {x: 302, y: 200}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 31748
+  controlID: 34240
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 334
     height: 460
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -224,7 +224,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2087ffffac8bffffb08cffffc090ffff12b2ffffd2baffff1abdffff4ac1ffff92c1fffffec3ffff56c4ffff52d0ffff4cd2ffff6ed5ffff58daffffc8daffffcee0fffff4e1ffff06e3ffffbce3ffff70e5ffff1ae7ffff34e8ffff0aedffffc0efffffd6efffff9ef2ffff2ef3ffff9cf9ffff0efbffff943900008e3c000082460000844c00005c50000012580000b8600000f46000002a690000826f0000a67a0000167c0000e89200006695000058b00000f6b100004eb50000ecb6000022bb00009cbd0000ccd0000014d1000038d100000cee000034ee000012ef00003aef0000
+      m_ExpandedIDs: ec5fffff0e65ffff2087ffffac8bffffb08cffffc090ffff12b2ffffd2baffff1abdffff4ac1ffff92c1fffffec3ffff56c4ffff52d0ffff4cd2ffff6ed5ffff58daffffc8daffffcee0fffff4e1ffff06e3ffffbce3ffff70e5ffff1ae7ffff34e8ffff0aedffffc0efffffd6efffff9ef2ffff2ef3ffff9cf9ffff0efbffff943900008e3c000082460000844c00005c50000012580000b8600000f46000002a690000826f0000a67a0000167c0000e89200006695000058b00000f6b100004eb50000ecb6000022bb00009cbd0000ccd0000014d1000038d100000cee000034ee000012ef00003aef000050260100e62e0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -311,9 +311,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 255.7379, y: 292.55756, z: -94.25}
+    m_Target: {x: 349.40186, y: 190.7723, z: -133.06195}
     speed: 2
-    m_Value: {x: 255.7379, y: 292.55756, z: -94.25}
+    m_Value: {x: 349.40186, y: 190.7723, z: -133.06195}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -363,9 +363,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 130.63194
+    m_Target: 362.62326
     speed: 2
-    m_Value: 130.63194
+    m_Value: 362.62326
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -456,11 +456,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\abbey\OneDrive\Computers for Learning\Final Project\FractionBakery\Fraction
     Bakery2
@@ -468,8 +468,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe390000
-    m_LastClickedID: 14846
+    m_SelectedIDs: fc390000
+    m_LastClickedID: 14844
     m_ExpandedIDs: 00000000f639000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -523,8 +523,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 34ee0000
-    m_LastClickedInstanceID: 60980
+    m_SelectedInstanceIDs: 5c2f0100
+    m_LastClickedInstanceID: 77660
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -599,8 +599,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 731
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -642,5 +642,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 60980
+  m_LastInspectedObjectInstanceID: 77660
   m_LastVerticalScrollValue: 0
