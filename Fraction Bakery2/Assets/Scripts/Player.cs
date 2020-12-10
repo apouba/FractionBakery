@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private Pin _targetPin;
     private MapManager _mapManager;
 
+
     public void Initialise(MapManager mapManager, Pin startPin)
     {
         _mapManager = mapManager;

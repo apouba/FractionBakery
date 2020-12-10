@@ -4426,6 +4426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e1f109af488704cabda3720d3d3696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelName: Level1
+  player: {fileID: 0}
   exit: {fileID: 1583890963}
 --- !u!114 &1583890963
 MonoBehaviour:

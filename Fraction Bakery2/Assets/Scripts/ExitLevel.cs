@@ -6,6 +6,13 @@ using UnityEngine.UI;
 
 public class ExitLevel : MonoBehaviour
 {
+    public string levelName;
+    private GameObject player;
+    private GameObject pin;
+    
+    private Vector2 player_location;
+    public Vector2 pin_location;
+    // get location of player and pin they are supposed to be on
 
     // if exit level button is pressed, send back to level map
     public Button exit;
@@ -13,13 +20,24 @@ public class ExitLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //player_location = new Vector2(0, 0);
+        //pin_location = new Vector2(0, 0);
+
+        //player = GameObject.FindWithTag("Player");
+        //player_location = player.transform.position;
+        //pin = GameObject.FindWithTag("pin1");
+        //player = GameObject.FindGameObjectWithTag("Player");
+
         Button exit_btn = exit.GetComponent<Button>();
         exit_btn.onClick.AddListener(BackToMap);
     }
 
     public void BackToMap()
     {
+
+        //player.transform.position = pin.transform.position; 
         SceneManager.LoadScene("Levels Map");
+        
     }
 
     // Update is called once per frame
