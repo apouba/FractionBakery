@@ -8,10 +8,9 @@ public class ExitLevel : MonoBehaviour
 {
     public string levelName;
     private GameObject player;
-    private Pin pin;
+    public GameObject pin;
+    public Pin p1;
     
-    private Vector2 player_location;
-    public Vector2 pin_location;
     // get location of player and pin they are supposed to be on
 
     // if exit level button is pressed, send back to level map
@@ -20,13 +19,30 @@ public class ExitLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //player_location = new Vector2(0, 0);
-        //pin_location = new Vector2(0, 0);
-
+        Transform meeple;
         player = GameObject.FindWithTag("Player");
-        //player_location = player.transform.position;
-        pin = 
+
+        Scene scene1 = SceneManager.GetSceneByName("Levels Map");
+
+        List<GameObject> rootObjects = new List<GameObject>();
+        scene1.GetRootGameObjects(rootObjects);
+
+        for (int i = 0; i < rootObjects.Count; i++)
+        {
+            if(rootObjects[i] == GameObject.Find("Pins"))
+            {
+                meeple = (rootObjects[i].transform.GetChild(0));
+                pin = meeple.gameObject;
+                p1 = pin.GetComponent<Pin>();
+
+            }
+        }
         
+        //p1 = Pins.transform.Find("1 - elementary medium");
+        //Pin p1 = pin.GetComponent<Pin>();
+        //Pin p1 = pin.GetComponent<Pin>();
+        //Debug.Log(p1.GetType().ToString());
+        //pin = p1.transform.Find("pin1").GetComponent<Pin>();
 
         Button exit_btn = exit.GetComponent<Button>();
         exit_btn.onClick.AddListener(BackToMap);
@@ -37,7 +53,8 @@ public class ExitLevel : MonoBehaviour
 
         //player.transform.position = pin.transform.position; 
         Player ps = player.GetComponent<Player>();
-        ps.SetCurrentPin(pin); 
+        
+        ps.SetCurrentPin(p1); 
         //player.get(CurrentPin) = pin;
         SceneManager.LoadScene("Levels Map");
         
