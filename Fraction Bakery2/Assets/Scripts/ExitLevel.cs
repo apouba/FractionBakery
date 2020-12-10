@@ -19,15 +19,15 @@ public class ExitLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Transform meeple;
-        player = GameObject.FindWithTag("Player");
+        //Transform meeple;
+        //player = GameObject.FindWithTag("Player");
 
-        Scene scene1 = SceneManager.GetSceneByName("Levels Map");
+        //Scene scene1 = SceneManager.GetSceneByName("Levels Map");
 
-        List<GameObject> rootObjects = new List<GameObject>();
-        scene1.GetRootGameObjects(rootObjects);
+        //List<GameObject> rootObjects = new List<GameObject>();
+        //scene1.GetRootGameObjects(rootObjects);
 
-        for (int i = 0; i < rootObjects.Count; i++)
+        /*for (int i = 0; i < rootObjects.Count; i++)
         {
             if(rootObjects[i] == GameObject.Find("Pins"))
             {
@@ -37,7 +37,7 @@ public class ExitLevel : MonoBehaviour
 
             }
         }
-        
+        */
         //p1 = Pins.transform.Find("1 - elementary medium");
         //Pin p1 = pin.GetComponent<Pin>();
         //Pin p1 = pin.GetComponent<Pin>();
@@ -52,9 +52,9 @@ public class ExitLevel : MonoBehaviour
     {
 
         //player.transform.position = pin.transform.position; 
-        Player ps = player.GetComponent<Player>();
+        //Player ps = player.GetComponent<Player>();
         
-        ps.SetCurrentPin(p1); 
+        //ps.SetCurrentPin(p1); 
         //player.get(CurrentPin) = pin;
         SceneManager.LoadScene("Levels Map");
         
