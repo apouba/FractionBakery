@@ -25,6 +25,7 @@ public class Ingredient : MonoBehaviour
 
     private void AnswerSubmit()
     {
+        correct = true;
         string incorrectText = "";
         if(flour.value > (flourRecipe+0.1) || flour.value < (flourRecipe-0.1))
         {
