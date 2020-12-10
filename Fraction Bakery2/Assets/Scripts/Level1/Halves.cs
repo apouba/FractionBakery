@@ -83,6 +83,7 @@ public class Halves : MonoBehaviour
         } else
         {
             endscreen.SetActive(true);
+            nextButtonView.SetActive(false);
         }
     }
 
