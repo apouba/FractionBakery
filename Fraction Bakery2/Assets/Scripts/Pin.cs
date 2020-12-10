@@ -32,10 +32,17 @@ public class Pin : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             _playLevel = true;
-        }
+            Debug.Log("on trigger");
+        } 
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        _playLevel = false;
+        Debug.Log("off of pin");
     }
 
     // Start is called before the first frame update
@@ -93,12 +100,14 @@ public class Pin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         // if player is on level pin
         if(_playLevel)
         {
             //Load a scene by the name "SceneName" if you press the Enter key.
             if (Input.GetKeyDown(KeyCode.Return))
             {
+                Debug.Log("loading " + levelName);
                 //SceneManager.LoadScene(index);
                 SceneManager.LoadScene(levelName);
             }
